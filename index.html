@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SnapStore</title>
+</head>
+
+<body>
+    <section id="todoSection">
+        <form id="todoList">
+            <fieldset id="todofield">
+                <legend>To Do List</legend>
+                <div class="InputDiv"><label><input type="text" name="task" placeholder="Add a task ...."></label></div>
+                <div class="btn"><button type="submit" class="todobtn">Add</button><button class="todobtn" id="deletebtn" onclick="deleteList(event)">Delete</button></div>
+            </fieldset>
+        </form>
+    </section>
+    <section id="formSection">
+    <form id="myForm">
+        <fieldset>
+            <legend>Subscribe</legend>
+            <div class="InputDiv">
+                <label for="username"><input id="username" type="text" name="username" placeholder="username" autocomplete="name" required autofocus></label>
+            </div>
+            <div class="InputDiv">
+            <label for="email"><input id="email" type="email" name="email" pattern="[a-z0-9A-Z]+@(gmail\.com|hotmail\.com|yahoo\.com)" title="Please Enter a valid email address! ( only gmail, yahoo, hotmail are accepted)" value="" placeholder="email" autocomplete="email" required></label>
+            </div>
+            <div class="btn"><button type="submit">Submit</button><button type="reset">Reset</button></div>
+        </fieldset>
+    </form>
+    </section>
+    <script src="./form.js" defer></script>
+    <script src="./main.js" defer></script>
+</body>
+</html>

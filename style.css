@@ -1,0 +1,131 @@
+:root{
+    --purple-bg: rgb(71, 29, 84);
+    --dark-grey: rgb(123,123,3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form{
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+fieldset{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: white;
+    /* border: none; */
+    border-width: 1px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px white, 5px 5px 3px transparent;
+}
+
+.InputDiv{
+    width: 80%;
+    height: 30%;
+    margin: 10px auto;
+    /* border: 1px solid red; */
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    color: orange;
+    outline: none;
+    transition: border-color 0.3s ease-in;
+}
+
+input:focus{
+     border-color: orange;
+     color: var(--purple-bg);
+     caret-color: blue;
+}
+
+legend{
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    margin: 5% auto;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+button{
+    border: none;
+    margin-right: 20px;
+    height: 100%;
+    width: 30%;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--purple-bg);
+    cursor: pointer;
+    box-shadow: 2px 2px 1px var(--purple-bg),2px 2px 1px white;
+}
+
+button:active{
+    transform: scale(105%);
+}
+
+.success{
+    margin: 0 auto;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+#todofield{
+    box-shadow: 1px 2px 2px lightblue, 2px 5px 3px transparent;
+}
+
+section+section{
+    margin-top: 10%;
+}
+
+.todobtn{
+    background-color: var(--dark-grey);
+    border: none;
+    box-shadow: 1px 2px 1px grey;
+    cursor: pointer;
+}
+
+.itemClass{
+    width: 10%;
+    color: grey;
+}
+
+.list{
+     margin: 0 auto;
+    color: white;
+    font-size: 1em;
+    text-align: start;
+    width: 100%;
+}
+
+
+.taskContent{
+    width: 100%;
+}
