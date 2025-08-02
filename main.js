@@ -30,19 +30,14 @@ function handleToDo(){
 handleToDo();
 
 function selectItems(){
-    let totalitems;
-    let itemlist=document.getElementsByClassName('itemClass');
-    itemlist.addEventListener('change',(event) => {
-         event.preventDefault();
-           totalitems = event.target.value;
-            console.log(totalitems);
-    });
-    itemlist.removeEventListener("change",selectItems);
+    let itemlist=document.getElementsByClassName('taskContent');
+    let totalitems = itemlist[itemlist.length-1];
     return totalitems;
 }
 
 function deleteList(){
     let totalitems = selectItems();
+    console.log(totalitems)
     if(totalitems == ""){
         alert("Please select the items to delete");
     }else{
